@@ -1,0 +1,83 @@
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .form-title {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+  }
+  
+  .register-button {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .terms {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Alinea verticalmente en el centro */
+    margin-top: 10px;
+  }
+
+  .checkbox {
+    order: 2;                /* Mueve el checkbox al final */
+    margin-left: 10px;       /* Espacio entre el texto y el checkbox */
+  }
+
+  .checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;        /* Espacio a la izquierda del checkbox */
+    background-color: white;  /* Fondo blanco para el checkbox */
+    border: 2px solid #e91e63; /* Borde rosa */
+    border-radius: 3px;       /* Bordes redondeados */
+    appearance: none;         /* Elimina el estilo predeterminado del checkbox */
+    cursor: pointer;          /* Muestra un cursor de puntero */
+    display: inline-block;    /* Asegura que el checkbox se alinee correctamente */
+    position: relative;       /* Posición relativa para el pseudo-elemento */
+  }
+
+  .checkbox input[type="checkbox"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #e91e63; /* Color rosa cuando está marcado */
+    transform: translate(-50%, -50%); /* Centra el contenido */
+  }
+
+  .terms-link {
+    order: 1;                /* Asegura que el texto esté antes del checkbox */
+    text-align: center;      /* Centra el texto */
+    margin: 0;
+    color: #8f8d8e;          /* Color gris */
+    text-decoration: underline; /* Subrayado por defecto */
+    cursor: pointer;         /* Cambia el cursor al pasar sobre el enlace */
+  }
+  
+  .terms-link:hover {
+    color: #e91e63;          /* Color rosa al pasar el mouse */
+  }

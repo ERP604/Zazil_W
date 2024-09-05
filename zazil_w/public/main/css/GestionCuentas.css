@@ -1,0 +1,55 @@
+.container-gestion-cuentas {
+    padding: 20px;
+  }
+  
+  .usuarios-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .usuarios-table th,
+  .usuarios-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .usuarios-table th {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .usuarios-table td {
+    color: #555;
+  }
+  
+  .usuarios-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .usuarios-actions button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .usuarios-actions .editar-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .usuarios-actions .eliminar-button {
+    background-color: #ff4d4d;
+    color: white;
+  }
+  
+  .usuarios-actions .otros-button {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  

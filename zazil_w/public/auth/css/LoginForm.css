@@ -1,0 +1,62 @@
+.login-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Asegúrate de que sea igual al de RegisterForm */
+  margin: 0 auto;
+  text-align: center;
+  width: 100%; /* Asegúrate de que ocupe todo el ancho posible */
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-container {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.input-container input {
+  width: 100%; /* Asegura que los inputs ocupen todo el ancho posible */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: black;
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+.login-button {
+  background-color: #e91e63;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.login-button:hover {
+  background-color: #d81b60;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 15px;
+  color: #8f8d8e; /* Igual que Términos y condiciones */
+  text-decoration: underline; /* Igual que Términos y condiciones */
+  font-size: 14px; /* Ajusta el tamaño de fuente */
+  font-family: Arial, sans-serif; /* Asegúrate de usar la misma tipografía */
+  cursor: pointer; /* Añade un cursor de puntero */
+}
+
+.forgot-password:hover {
+  color: #e91e63; /* Cambia a rosado al pasar el mouse */
+  text-decoration: underline;
+}
