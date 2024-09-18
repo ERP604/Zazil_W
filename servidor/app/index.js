@@ -15,7 +15,7 @@ app.listen(app.get('port'), '127.0.0.1', () => {
 });
 
 //Configuracion
-app.use(express.static(__dirname + "/../../public"));
+app.use(express.static(__dirname + "/../../TodasBrillamos"));
 // Middleware para servir archivos .br
 app.get('*.br', function (req, res, next) {
     res.set('Content-Encoding', 'br');
@@ -23,3 +23,9 @@ app.get('*.br', function (req, res, next) {
 });
 
 app.use (express.json());
+
+// Enpoints
+
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname + '/../../TodasBrillamos/index.html'));
+});
