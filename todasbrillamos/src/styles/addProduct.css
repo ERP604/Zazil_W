@@ -1,0 +1,82 @@
+.add-product-page {
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #ff4081;
+    text-align: left;
+  }
+  
+  .add-product-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .image-upload-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .image-upload-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .upload-placeholder {
+    font-size: 50px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .product-info-section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    flex: 1;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group-inline {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .save-button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .save-button:hover {
+    background-color: #e53975;
+  }
+  

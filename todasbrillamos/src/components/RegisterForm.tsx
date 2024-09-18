@@ -7,7 +7,7 @@ interface RegisterFormProps {
 const RegisterForm: React.FC<RegisterFormProps> = ({ toggleForm }) => {
   return (
     <div className="auth-container">
-      <h1 className="app-title">Zazil</h1> {/* Título añadido */}
+      <h1 className="app-title">Zazil</h1>
       <h2>Registrarse</h2>
       <form>
         <div className="form-group">

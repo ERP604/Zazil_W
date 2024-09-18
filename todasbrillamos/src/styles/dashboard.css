@@ -1,0 +1,58 @@
+.dashboard {
+    padding: 20px;
+  }
+  
+  .dashboard h1 {
+    color: #d94683;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .dashboard__overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+  }
+  
+  .card i {
+    font-size: 2rem;
+    color: #4CAF50;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  
+  .card p {
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
+  .card h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .dashboard__charts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .chart {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  

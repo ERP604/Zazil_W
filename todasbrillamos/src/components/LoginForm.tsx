@@ -7,7 +7,7 @@ interface LoginFormProps {
 const LoginForm: React.FC<LoginFormProps> = ({ toggleForm }) => {
   return (
     <div className="auth-container">
-      <h1 className="app-title">Zazil</h1> {/* Título agregado */}
+      <h1 className="app-title">Zazil</h1>
       <h2>Iniciar Sesión</h2>
       <form>
         <div className="form-group">

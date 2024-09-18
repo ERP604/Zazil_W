@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
+<<<<<<< HEAD
 // import MainLayout from '../layouts/MainLayout';
 import '../styles/AccoutSettings.css';
+=======
+import '../styles/accoutSettings.css';
+>>>>>>> 69a2f83ecf749daf72b0471f48d43f4e5df3daf2
 
 const AccountSettings = () => {
   const [user, setUser] = useState({

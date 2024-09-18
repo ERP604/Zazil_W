@@ -1,0 +1,58 @@
+.accounts-page {
+    margin: 20px;
+    background-color: #f9fafb;
+  }
+  
+  .accounts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .accounts-table th,
+  .accounts-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .accounts-table th {
+    background-color: #f3f4f6;
+    color: #6b7280;
+    font-weight: 600;
+  }
+  
+  .accounts-table td {
+    background-color: #fff;
+  }
+  
+  .accounts-table .status {
+    font-weight: 600;
+  }
+  
+  .accounts-table .status.active {
+    color: #10b981;
+  }
+  
+  .accounts-table .status.suspended {
+    color: #ef4444;
+  }
+  
+  .accounts-table .delete-icon {
+    cursor: pointer;
+    color: #ef4444;
+    transition: color 0.2s;
+  }
+  
+  .accounts-table .delete-icon:hover {
+    color: #b91c1c;
+  }
+  
+  .accounts-page .table-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
