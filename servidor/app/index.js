@@ -27,5 +27,5 @@ app.use (express.json());
 // Enpoints
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname + '/../../TodasBrillamos/src/index.html'));
+    res.sendFile(path.join(__dirname + '/../../TodasBrillamos/index.html'));
 });
