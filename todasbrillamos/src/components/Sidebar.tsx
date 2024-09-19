@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faTachometerAlt, faBox, faScrewdriverWrench, faCog, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
-import "./../styles/sidebar.css";
 import "../styles/sidebar.css";
 
 const Sidebar: React.FC = () => {

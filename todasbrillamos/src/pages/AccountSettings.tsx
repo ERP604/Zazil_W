@@ -15,7 +15,7 @@ const AccountSettings = () => {
         setUser({
           name: 'Nombre del usuario',
           email: 'usuario@ejemplo.com',
-          password: ''
+          password: '********'
         });
       };
       
@@ -78,7 +78,7 @@ const AccountSettings = () => {
             </div>
             {/* <div className="input-group">
               <label>Estatus de cuenta</label>
-              <button className={status-btn ${user.status === 'Habilitada' ? 'enabled' : 'disabled'}}>
+              <button className={`status-btn ${user.status === 'Habilitada' ? 'enabled' : 'disabled'}`}>
                 {user.status}
               </button>
             </div> */}
