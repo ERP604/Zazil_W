@@ -1,0 +1,28 @@
+/* .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  } */
+   
+  .main-layout {
+    display: flex;
+    /*margin-top: 60px; /* Altura de la Navbar */
+    /*margin-left: 240px; /* Ancho de la Sidebar */
+    flex: 1;
+  }
+  
+  /* .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+  } */
+  
+  /* Ajuste opcional para que el contenido no se solape con el Sidebar */
+  .main-content {
+    /*margin-top: 60px; /* Altura de la Navbar */
+    /*margin-left: 240px; /* Ancho de la Sidebar */
+    /*padding: 20px;*/
+    background-color: #f5f5f5;
+    width: 100%;
+  }
