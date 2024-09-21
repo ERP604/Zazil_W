@@ -32,9 +32,10 @@ const AccountsPage: React.FC = () => {
     <div className="accounts-page">
       <h1>Cuentas</h1>
       <SearchBar 
-        placeholder="Search..." 
+        placeholder="Buscar..." 
         filters={
           <div>
+            <label>Filtrar por:</label>
             <select>
               <option value="">Estatus</option>
               <option value="activo">Activo</option>
@@ -46,7 +47,7 @@ const AccountsPage: React.FC = () => {
             </select>
           </div>
         } 
-      />
+        />
       <table className="accounts-table">
         <thead>
           <tr>
@@ -64,7 +65,7 @@ const AccountsPage: React.FC = () => {
               <td>{account.id}</td>
               <td>{account.firstName}</td>
               <td>{account.lastName}</td>
-              <td className={account.status === 'Activo' ? 'active' : 'suspended'}>
+              <td className={account.status === 'Activo' ? 'account-active' : 'account-suspended'}>
                 {account.status}
               </td>
               <td>{account.role}</td>

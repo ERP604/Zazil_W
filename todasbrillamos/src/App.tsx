@@ -8,6 +8,7 @@ import AnadirProductos from "./pages/AddProductPage";
 import Cuentas from "./pages/AccountsPage";
 import Soporte from "./pages/Support";
 import EditarProducto from "./pages/EditarProducto";
+import AnadirAdministrador from "./pages/AddAdministrador";
 
 
 const App: React.FC = () => {
@@ -22,6 +23,7 @@ const App: React.FC = () => {
           <Route path="/cuentas" element={<Cuentas />} />
           <Route path="/soporte" element={<Soporte />} />
           <Route path="/editarproductos" element={<EditarProducto />} />
+          <Route path="/añadiradministrador" element={<AnadirAdministrador />} />
         </Routes>
       </MainLayout>
     </Router>
