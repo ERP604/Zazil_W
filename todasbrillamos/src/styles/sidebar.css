@@ -3,6 +3,10 @@
   background-color: #f72585;
   color: white;
   height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
 }
 
 .sidebar__header {
@@ -40,7 +44,7 @@
 .sidebar__footer {
   position: absolute;
   bottom: 20px;
-  /* width: 100%; */
+  width: 100%;
 }
 
 .sidebar__footer ul {
@@ -61,4 +65,9 @@
 
 .sidebar__footer li a:hover {
   background-color: #e31372;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
 }
