@@ -4,12 +4,14 @@ import "../styles/mainLayout.css";
 
 interface MainLayoutProps {
   children: ReactNode;
+  onLogout: () => void;
 }
 
-const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
+const MainLayout: React.FC<MainLayoutProps> = ({ children, onLogout }) => {
   return (
     <div className="main-layout">
-      <Sidebar />
+      {/* Pasamos la prop onLogout al Sidebar */}
+      <Sidebar onLogout={onLogout} />
       <div className="main-content">
         {children}
       </div>

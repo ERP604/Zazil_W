@@ -10,11 +10,15 @@ import Soporte from "./pages/Support";
 import EditarProducto from "./pages/EditarProducto";
 import AnadirAdministrador from "./pages/AddAdministrador";
 
+interface AppProps {
+  onLogout: () => void;
+}
 
-const App: React.FC = () => {
+const App: React.FC<AppProps> = ({ onLogout }) => {
   return (
     <Router>
-      <MainLayout>
+      {/* Pasamos onLogout al MainLayout */}
+      <MainLayout onLogout={onLogout}>
         <Routes>
           <Route path="/ajustes" element={<AccountSettings />} />
           <Route path="/dashboard" element={<Dashboard />} />

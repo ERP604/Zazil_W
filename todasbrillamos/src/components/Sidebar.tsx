@@ -4,7 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faTachometerAlt, faBox, faScrewdriverWrench, faCog, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import "../styles/sidebar.css";
 
-const Sidebar: React.FC = () => {
+interface SidebarProps {
+  onLogout: () => void;
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ onLogout }) => {
   return (
     <div className="sidebar">
       <div className="sidebar__header">
@@ -28,7 +32,7 @@ const Sidebar: React.FC = () => {
         </li>
         <li>
           <Link to="/soporte">
-          <FontAwesomeIcon icon={faScrewdriverWrench} className="sidebar__icon" /> Soporte
+            <FontAwesomeIcon icon={faScrewdriverWrench} className="sidebar__icon" /> Soporte
           </Link>
         </li>
       </ul>
@@ -40,9 +44,10 @@ const Sidebar: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link to="/logout">
+            {/* Añadir onClick para el logout */}
+            <span onClick={onLogout} style={{ cursor: 'pointer' }}>
               <FontAwesomeIcon icon={faSignOutAlt} className="sidebar__icon" /> Cerrar Sesión
-            </Link>
+            </span>
           </li>
         </ul>
       </div>

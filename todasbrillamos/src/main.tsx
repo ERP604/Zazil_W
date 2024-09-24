@@ -11,9 +11,13 @@ const MainApp: React.FC = () => {
     setIsAuthenticated(true);
   };
 
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+  };
+
   return (
     <React.StrictMode>
-      {isAuthenticated ? <App /> : <AppPublic onLogin={handleLogin} />}
+      {isAuthenticated ? <App onLogout={handleLogout} /> : <AppPublic onLogin={handleLogin} />}
     </React.StrictMode>
   );
 };
