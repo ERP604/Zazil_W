@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import AuthPage from './pages/AuthPage';
 
 interface AppPublicProps {
-  onLogin: () => void;
+  onLogin: (token: string) => void;
 }
 
-const AppPublic: React.FC <AppPublicProps> = ({ onLogin }) => {
+const AppPublic: React.FC<AppPublicProps> = ({ onLogin }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -16,7 +16,8 @@ const AppPublic: React.FC <AppPublicProps> = ({ onLogin }) => {
 
   const handleLoginClick = () => {
     if (email === validEmail && password === validPassword) {
-      onLogin();
+      const fakeToken = 'token123456'; // Genera o recibe un token real según tu backend
+      onLogin(fakeToken);
     } else {
       setError('Correo o contraseña incorrectos');
     }
