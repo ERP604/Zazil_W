@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import SearchBar from '../components/SearchBar';
 import Pagination from '../components/Pagination';
 import "../styles/accountsPage.css";
@@ -77,6 +78,15 @@ const AccountsPage: React.FC = () => {
         </tbody>
       </table>
       <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />
+
+      <div className="add-admin-container">
+      <Link to="/añadiradministrador">
+        <button className="add-admin-button">
+          <span>+</span>
+          <p>Agregar Administrador</p>
+        </button>
+      </Link>
+      </div>
     </div>
   );
 };

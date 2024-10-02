@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faTachometerAlt, faBox, faScrewdriverWrench, faCog, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faTachometerAlt, faBox, faCog, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import "../styles/sidebar.css";
 
 interface SidebarProps {
@@ -28,11 +28,6 @@ const Sidebar: React.FC<SidebarProps> = ({ onLogout }) => {
         <li>
           <Link to="/cuentas">
             <FontAwesomeIcon icon={faUser} className="sidebar__icon" /> Cuentas
-          </Link>
-        </li>
-        <li>
-          <Link to="/soporte">
-            <FontAwesomeIcon icon={faScrewdriverWrench} className="sidebar__icon" /> Soporte
           </Link>
         </li>
       </ul>

@@ -48,5 +48,52 @@
   transition: color 0.2s;
 }
 
+.add-admin-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.add-admin-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  border: 2px dashed #007bff;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #007bff;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; 
+  outline: none; 
+}
+
+.add-admin-button:focus {
+  outline: none; 
+}
+
+.add-admin-button:hover {
+  background-color: #e6f0ff;
+}
+
+.add-admin-button span {
+  font-size: 3rem;
+}
+
+.add-admin-button p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: black;
+}
+
+.add-admin-container a {
+  text-decoration: none; 
+}
+
 .accounts-table .delete-icon:hover {
-  color
+  color:#ef4444
+}
