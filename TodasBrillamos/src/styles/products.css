@@ -1,0 +1,139 @@
+.products-page {
+    padding: 20px;
+  }
+  
+  .products-page h1 {
+    font-size: 2rem;
+    color: #f72585;
+    margin-bottom: 20px;
+  }
+  
+  .products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .products-search-filter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .products-search-filter input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  .filter-options select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .add-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 270px;
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #007bff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; 
+    outline: none;
+  }
+
+  .add-product:focus {
+    outline: none; 
+  }
+
+  .add-product:hover {
+    background-color: #e6f0ff;
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+    gap: 10px; 
+    align-items: start; 
+  }
+
+  .add-product .add-icon {
+    font-size: 48px; 
+    color: #3b82f6; 
+    margin-bottom: 10px;
+  }
+
+  .add-product p {
+    margin: 0;
+    font-size: 16px; 
+    color: black; 
+  }
+
+  .product-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .edit-btn {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn {
+    background-color: #ff1744;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+  .pagination button, .page-number {
+    margin: 0 5px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button:hover, .page-number:hover {
+    background-color: #f1f1f1;
+  }
+  
