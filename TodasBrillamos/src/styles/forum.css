@@ -1,0 +1,157 @@
+.forum-page {
+  margin: 20px;
+}
+
+.forum-page h1 {
+  font-size: 2rem;
+  color: #da4184;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filters label {
+  margin-right: 10px;
+}
+
+.filters select {
+  margin-right: 20px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.forum-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forum-table th,
+.forum-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.forum-table th:nth-child(4),
+.forum-table td:nth-child(4) {
+  width: 150px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.forum-table th {
+  background-color: #f3f4f6;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.forum-table td {
+  background-color: #fff;
+  text-align: center;
+}
+
+.status-respondida {
+  color: rgb(44, 245, 44);
+  font-weight: bold;
+}
+
+.status-sin-responder {
+  color: red;
+  font-weight: bold;
+}
+
+.table-button {
+  background-color: #da4184;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  outline: none;
+  text-decoration: none;
+}
+
+.table-button:hover {
+  background-color: #ff0073;
+}
+
+.actions-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.forum-page .error-message {
+  color: red;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.modal h2 {
+  margin-bottom: 15px;
+}
+
+.modal p {
+  margin-bottom: 20px;
+}
+
+.response-textarea {
+  width: 350px;
+  height: 100px;
+  padding: 10px;
+  resize: vertical;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.modal .table-button {
+  flex: 1;
+  max-width: 150px;
+}
